@@ -114,7 +114,7 @@ body, .app {
   display: block;
   width: 73px;
   background: white;
-  background-image: url('./icons/person-add.svg');
+  background-image: url('./icons/notes-add.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 28px;

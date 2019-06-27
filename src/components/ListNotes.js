@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import escapeRegExp from 'escape-string-regexp'
+import sortBy from 'sort-by'
 
 class ListNotes extends Component {
 
@@ -9,16 +11,41 @@ class ListNotes extends Component {
         onDeleteNote: PropTypes.func.isRequired
     }
 
+    state = {
+        query: ''
+    }
+
+    updateQuery = (query) => {
+        this.setState({ query: query.trim() })
+    }
+
+    clearQuery = () => {
+        this.setState({query: ''})
+    }
+
     render() {
 
         const { noteList, onDeleteNote } = this.props
+        const { query } = this.state
+
+        let showingNotes
+        if (query) {
+            const match = new RegExp(escapeRegExp(query), 'i')
+            showingNotes = noteList.filter((note) => match.test(note.title))
+        } else {
+            showingNotes = noteList
+        }
+
+        showingNotes.sort(sortBy('name'))
 
         return (
             <div className='list-notes'>
                 <div className='list-notes-top'>
                     <input className='search-notes'
                         type='text'
-                        placeholder='Search Notes' />
+                        placeholder='Search Notes'
+                        value={query}
+                        onChange={(event) => this.updateQuery(event.target.value)} />
 
                     <Link to="/create"
                         className='add-note'>
@@ -26,8 +53,15 @@ class ListNotes extends Component {
                     </Link>
                 </div>
 
+                {showingNotes.length !== noteList.length && (
+                    <div className='showing-notes'>
+                    <span>Now showing {showingNotes.length} of {noteList.length}</span>
+                    <button onClick={this.clearQuery}>Show all</button>
+                </div>
+                )}
+
                 <ol className='note-list'>
-                    {noteList.map((note) => (
+                    {showingNotes.map((note) => (
                         <li key={note.id} className='note-list-item'>
                             <div className='note-details'>
                                 <li>{note.title}</li>
