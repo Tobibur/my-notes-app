@@ -28,9 +28,9 @@ body, .app {
   background: #f5f5f5;
 }
 
-/* CreateContact */
+/* Createnote */
 
-.close-create-contact {
+.close-create-note {
   display: block;
   width: 60px;
   height: 60px;
@@ -41,18 +41,18 @@ body, .app {
   font-size: 0;
 }
 
-.create-contact-form {
+.create-note-form {
   padding: 20px;
   max-width: 500px;
   margin: 0 auto;
   display: flex;
 }
 
-.create-contact-details {
+.create-note-details {
   margin-left: 20px;
 }
 
-.create-contact-avatar-input {
+.create-note-avatar-input {
   min-width: 60px;
   height: 60px;
   background-color: white;
@@ -63,7 +63,7 @@ body, .app {
   border-radius: 50%;
 }
 
-.create-contact-details input {
+.create-note-details input {
   width: 100%;
   padding: 5px 10px;
   margin-bottom: 10px;
@@ -75,7 +75,7 @@ body, .app {
 }
 
 
-.create-contact-details button {
+.create-note-details button {
   margin-top: 20px;
   background: #ccc;
   padding: 10px;
@@ -85,12 +85,12 @@ body, .app {
   outline: 0;
 }
 
-/* ListContacts */
+/* Listnotes */
 
-.list-contacts {
+.list-notes {
   padding-top: 60px;
 }
-.list-contacts-top {
+.list-notes-top {
   position: fixed;
   width: 100%;
   top: 0;
@@ -98,7 +98,7 @@ body, .app {
   display: flex;
 }
 
-.search-contacts {
+.search-notes {
   width: 100%;
   padding: 20px 20px 20px 60px;
   background-image: url('./icons/search.svg');
@@ -110,7 +110,7 @@ body, .app {
   outline: none;
 }
 
-.add-contact {
+.add-note {
   display: block;
   width: 73px;
   background: white;
@@ -121,11 +121,11 @@ body, .app {
   font-size: 0;
 }
 
-.showing-contacts {
+.showing-notes {
   text-align: center;
   margin: 20px 0;
 }
-.showing-contacts button {
+.showing-notes button {
   color: blue;
   background: transparent;
   border: none;
@@ -133,27 +133,27 @@ body, .app {
   font-size: inherit;
 }
 
-.contact-list {
+.note-list {
   width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.contact-list-item {
+.note-list-item {
   padding: 20px;
   background: white;
   display: flex;
 }
 
 @media (min-width: 600px) {
-  .contact-list-item {
+  .note-list-item {
     margin: 20px;
     border: 1px solid #d5d8df;
     border-radius: 4px;
   }
 }
 
-.contact-avatar {
+.note-avatar {
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -163,7 +163,7 @@ body, .app {
   flex-shrink: 0;
 }
 
-.contact-details {
+.note-details {
   padding-left: 20px;
   border-left: 1px solid #eee;
 
@@ -174,7 +174,7 @@ body, .app {
   flex-direction: column;
   justify-content: center;
 }
-.contact-details p {
+.note-details p {
   margin: 0;
   min-width: 0;
   white-space: nowrap;
@@ -182,7 +182,7 @@ body, .app {
   text-overflow: ellipsis;
 }
 
-.contact-remove {
+.note-remove {
   padding-left: 20px;
   align-self: center;
   width: 32px;
