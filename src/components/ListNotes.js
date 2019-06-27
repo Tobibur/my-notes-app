@@ -22,7 +22,7 @@ class ListNotes extends Component {
                         <li key={note.id} className='note-list-item'>
                             <div className='note-details'>
                                 <li>{note.title}</li>
-                                <li>{note.description}</li>
+                                <li>{note.content}</li>
                             </div>
                         </li>
                     ))}

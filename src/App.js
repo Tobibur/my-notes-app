@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import './App.css';
 import ListNotes from './components/ListNotes'
 import CreateNote from './components/CreateNote'
+import * as NotesAPI from './utils/NotesAPI'
 
 const notes_data = [
   {
@@ -29,7 +30,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({ notes: notes_data })
+    NotesAPI.getAll().then((data) => {
+      console.log(data);
+      this.setState({ notes: data })
+    })
   }
 
 
