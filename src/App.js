@@ -5,23 +5,23 @@ import ListNotes from './components/ListNotes'
 import CreateNote from './components/CreateNote'
 import * as NotesAPI from './utils/NotesAPI'
 
-const notes_data = [
-  {
-    "id": "ryan",
-    "title": "Ryan Florence",
-    "description": "ryan@reacttraining.com"
-  },
-  {
-    "id": "michael",
-    "title": "Michael Jackson",
-    "description": "michael@reacttraining.com"
-  },
-  {
-    "id": "tyler",
-    "title": "Tyler McGinnis",
-    "description": "tyler@reacttraining.com"
-  }
-]
+// const notes_data = [
+//   {
+//     "id": "ryan",
+//     "title": "Ryan Florence",
+//     "description": "ryan@reacttraining.com"
+//   },
+//   {
+//     "id": "michael",
+//     "title": "Michael Jackson",
+//     "description": "michael@reacttraining.com"
+//   },
+//   {
+//     "id": "tyler",
+//     "title": "Tyler McGinnis",
+//     "description": "tyler@reacttraining.com"
+//   }
+// ]
 
 class App extends Component {
 
@@ -36,16 +36,36 @@ class App extends Component {
     })
   }
 
+  removeNote = (note) => {
+    this.setState((state) => ({
+      notes: state.notes.filter((n) => n.id !== note.id)
+    }))
+
+    NotesAPI.remove(note)
+  }
+
+  createNote(note){
+    NotesAPI.create(note).then(note =>{
+      this.setState(state => ({
+        notes: state.notes.concat([note])
+      }))
+    })
+  }
+
 
   render() {
     return (
       <div className="App">
         <Route exact path="/" render={() =>(
-          <ListNotes noteList={this.state.notes} />
+          <ListNotes noteList={this.state.notes}
+          onDeleteNote={this.removeNote} />
         )}/>
         
         <Route path="/create" render={({history}) =>(
-          <CreateNote/>
+          <CreateNote onCreateNote={(note) => {
+            this.createNote(note)
+            history.push('/')
+          }}/>
         )}/>
         
       </div>
