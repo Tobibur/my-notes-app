@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom'
 import './App.css';
 import ListNotes from './components/ListNotes'
 import CreateNote from './components/CreateNote'
@@ -35,8 +36,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ListNotes noteList={this.state.notes} />
-        <CreateNote/>
+        <Route exact path="/" render={() =>(
+          <ListNotes noteList={this.state.notes} />
+        )}/>
+        
+        <Route path="/create" render={({history}) =>(
+          <CreateNote/>
+        )}/>
+        
       </div>
     );
   }

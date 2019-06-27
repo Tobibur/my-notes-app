@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class ListNotes extends Component {
 
@@ -10,10 +11,10 @@ class ListNotes extends Component {
                         type='text'
                         placeholder='Search Notes' />
 
-                    <a href="#"
+                    <Link to="/create"
                         className='add-contact'>
-                        Add Contact
-                    </a>
+                        Add Note
+                    </Link>
                 </div>
 
                 <ol className='contact-list'>
