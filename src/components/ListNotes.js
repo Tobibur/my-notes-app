@@ -64,8 +64,8 @@ class ListNotes extends Component {
                     {showingNotes.map((note) => (
                         <li key={note.id} className='note-list-item'>
                             <div className='note-details'>
-                                <li>{note.title}</li>
-                                <li>{note.content}</li>
+                                <h3>{note.title}</h3>
+                                <p>{note.content}</p>
                             </div>
                             <button onClick={() => onDeleteNote(note)} className='note-remove'>
                                 Remove
