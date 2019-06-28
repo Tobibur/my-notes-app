@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6d64383d33801f4ccfd614a34690b32",
+    "revision": "0cecf74e195384e6e7a14df0ca9e787d",
     "url": "/my-notes-app/index.html"
   },
   {
-    "revision": "c1b3e5d8f9eaec6035fc",
+    "revision": "24901fc15ba0d90dcda4",
     "url": "/my-notes-app/static/css/main.43e54023.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-notes-app/static/js/2.15d407c9.chunk.js"
   },
   {
-    "revision": "c1b3e5d8f9eaec6035fc",
-    "url": "/my-notes-app/static/js/main.f293893c.chunk.js"
+    "revision": "24901fc15ba0d90dcda4",
+    "url": "/my-notes-app/static/js/main.1091d753.chunk.js"
   },
   {
     "revision": "0ab4fac4399957826a4a",
