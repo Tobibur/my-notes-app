@@ -1,4 +1,4 @@
-const api = process.env.REACT_APP_NOTES_API_URL || 'http://localhost:8080'
+const api = process.env.REACT_APP_NOTES_API_URL || 'https://tobis-notes.herokuapp.com'
 
 const headers = {
     'Accept': 'application/json',
