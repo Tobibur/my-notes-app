@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e845b11a8fa8d1336d2d0f2dec0db9c",
+    "revision": "c6d64383d33801f4ccfd614a34690b32",
     "url": "/my-notes-app/index.html"
   },
   {
