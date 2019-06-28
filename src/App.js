@@ -5,24 +5,6 @@ import ListNotes from './components/ListNotes'
 import CreateNote from './components/CreateNote'
 import * as NotesAPI from './utils/NotesAPI'
 
-// const notes_data = [
-//   {
-//     "id": "ryan",
-//     "title": "Ryan Florence",
-//     "description": "ryan@reacttraining.com"
-//   },
-//   {
-//     "id": "michael",
-//     "title": "Michael Jackson",
-//     "description": "michael@reacttraining.com"
-//   },
-//   {
-//     "id": "tyler",
-//     "title": "Tyler McGinnis",
-//     "description": "tyler@reacttraining.com"
-//   }
-// ]
-
 class App extends Component {
 
   state = {
