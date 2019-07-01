@@ -1,23 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0cecf74e195384e6e7a14df0ca9e787d",
+    "revision": "1b2235ec8a359c177b22c320db4400f5",
     "url": "/my-notes-app/index.html"
   },
   {
-    "revision": "24901fc15ba0d90dcda4",
-    "url": "/my-notes-app/static/css/main.43e54023.chunk.css"
+    "revision": "1cd85952cfe84cde8a9c",
+    "url": "/my-notes-app/static/css/main.acb5c1db.chunk.css"
   },
   {
     "revision": "9fc7fb0b020ad718388a",
     "url": "/my-notes-app/static/js/2.15d407c9.chunk.js"
   },
   {
-    "revision": "24901fc15ba0d90dcda4",
-    "url": "/my-notes-app/static/js/main.1091d753.chunk.js"
+    "revision": "1cd85952cfe84cde8a9c",
+    "url": "/my-notes-app/static/js/main.869d09ce.chunk.js"
   },
   {
     "revision": "0ab4fac4399957826a4a",
     "url": "/my-notes-app/static/js/runtime~main.b8b0b4f2.js"
+  },
+  {
+    "revision": "9880fc0845d0f3950e490e4f3b05c08c",
+    "url": "/my-notes-app/static/media/JosefinSans-Bold.9880fc08.ttf"
+  },
+  {
+    "revision": "0d9b62a03206f739cd34b2936a5929f1",
+    "url": "/my-notes-app/static/media/SourceSansPro-Bold.0d9b62a0.ttf"
+  },
+  {
+    "revision": "5182da425f811908bed9f5b8c72fa44f",
+    "url": "/my-notes-app/static/media/SourceSansPro-Regular.5182da42.ttf"
   },
   {
     "revision": "7ee640f70ac495811737bcb55afa7ef5",

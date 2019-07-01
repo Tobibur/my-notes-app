@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-notes-app/static/css/main.43e54023.chunk.css",
-    "main.js": "/my-notes-app/static/js/main.1091d753.chunk.js",
-    "main.js.map": "/my-notes-app/static/js/main.1091d753.chunk.js.map",
+    "main.css": "/my-notes-app/static/css/main.acb5c1db.chunk.css",
+    "main.js": "/my-notes-app/static/js/main.869d09ce.chunk.js",
+    "main.js.map": "/my-notes-app/static/js/main.869d09ce.chunk.js.map",
     "runtime~main.js": "/my-notes-app/static/js/runtime~main.b8b0b4f2.js",
     "runtime~main.js.map": "/my-notes-app/static/js/runtime~main.b8b0b4f2.js.map",
     "static/js/2.15d407c9.chunk.js": "/my-notes-app/static/js/2.15d407c9.chunk.js",
     "static/js/2.15d407c9.chunk.js.map": "/my-notes-app/static/js/2.15d407c9.chunk.js.map",
     "index.html": "/my-notes-app/index.html",
-    "precache-manifest.fc820f4a4214d854e36d09112024dbe1.js": "/my-notes-app/precache-manifest.fc820f4a4214d854e36d09112024dbe1.js",
+    "precache-manifest.1a2bf997414c1541c7924f8f537aeb7c.js": "/my-notes-app/precache-manifest.1a2bf997414c1541c7924f8f537aeb7c.js",
     "service-worker.js": "/my-notes-app/service-worker.js",
-    "static/css/main.43e54023.chunk.css.map": "/my-notes-app/static/css/main.43e54023.chunk.css.map",
+    "static/css/main.acb5c1db.chunk.css.map": "/my-notes-app/static/css/main.acb5c1db.chunk.css.map",
     "static/media/index.css": "/my-notes-app/static/media/search.cb707987.svg"
   }
 }
